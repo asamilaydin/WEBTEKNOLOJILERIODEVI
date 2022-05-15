@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AHMET ŞAMİL AYDIN</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<link rel="stylesheet" href="style.css">
+   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<script type="text/Javascript">
+    function control(){
+      var isim = document.getElementById("isim").value;
+      var soyisim = document.getElementById("soyisim").value;
+      var email = document.getElementById("email");
+      var cinsiyetler = document.getElementsByName("cinsiyet");
+
+      if (isim  == "")
+      {
+        alert("İsim girmelisiniz!");
+        return false;
+      }
+      if (soyisim == "")
+      {
+        alert("Soyisim girmelisiniz!");
+        return false;
+      }
+      if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value)))
+      {
+        alert("Geçerli bir E-Mail adresi girmelisiniz!");
+        return false;
+      }
+      if ((cinsiyetler[0].checked == false) && (cinsiyetler[1].checked == false))
+      {
+        alert("Cinsiyet seçmelisiniz!");
+        return false;
+      }
+    }
+    </script>
+
+
+
+
+
+</head>
+<body>
+
+    <nav class="navbar bg-dark navbar-dark navbar-expand-md " id="menu">
+    
+        <div class="container-fluid">
+        
+          <a href="hakkında.html" class="navbar-brand" id="logo">BENİM DÜNYAM</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="hakkında.html" class="nav-link">HAKKINDA</a>
+          </li>
+          <li class="nav-item">
+            <a href="ozgecmis.html" class="nav-link">ÖZGEÇMİŞ</a>
+          </li>
+          <li class="nav-item">
+            <a href="sehrim.html" class="nav-link">ŞEHRİM</a>
+          </li>
+          <li class="nav-item">
+            <a href="mirasımız.html" class="nav-link">MİRASIMIZ</a>
+          </li>
+          <li class="nav-item">
+            <a href="ilgialanlarım.html" class="nav-link">İLGİ ALANLARIM</a>
+          </li>
+          <li class="nav-item">
+            <a href="iletisim.html" class="nav-link">İLETİŞİM</a>
+          </li>
+  
+        </ul>
+      </div>
+      </nav>
+
+
+
+<div class="container">
+<div class="bg-dark text-white text-center py-2 mt-5">
+<h2>İletişim Sayfası</h2>
+</div>
+<div class="row">
+<div class="col-md-6 col-sm-12">
+<div>
+    <figure class="mb-4 mt-4 " ><img class="img-fluid rounded" src="fotoğraflar\beniletisim.jpg" alt="Ahmet " id="beniletisim"></figure>
+</div>
+</div>
+<div class="col-md-6 col-sm-12">
+
+
+    <form name="iletisimform" action="iletisim.php" method="POST" onsubmit="return control();"><br>
+        <input class="form-control" type="text" id="isim" name="isim" placeholder="İsim" autofocus><br>
+        <input class="form-control" type="text" id="soyisim" name="soyisim" placeholder="Soyisim"><br>
+        <input class="form-control" type="text" id="email" name="email" placeholder="E-Mail"><br>
+        <label  for="cinsiyet">Cinsiyetiniz: </label>
+        <input type="radio" id="erkek" name="cinsiyet" value="Erkek">
+        <label  for="male">Erkek</label>
+        <input type="radio" id="kadin" name="cinsiyet" value="Kadın">
+        <label  for="female">Kadın</label><br>
+        <label  for="sehir">Yaşadığınız Şehir; </label>
+        <select id="sehir" name="sehir">
+          <option value="İstanbul" selected>İstanbul</option>
+          <option value="Ankara">Ankara</option>
+          <option value="İzmir">İzmir</option>
+          <option value="Bursa">Bursa</option>
+          <option value="Antalya">Antalya</option>
+          <option value="Adana">Adana</option>
+          <option value="Konya">Konya</option>
+          <option value="Şanlıurfa">Şanlıurfa</option>
+          <option value="Gaziantep">Gaziantep</option>
+          <option value="Kocaeli">Kocaeli</option>
+          <option value="Mersin">Mersin</option>
+          <option value="Diyarbakır">Diyarbakır</option>
+          <option value="Hatay">Hatay</option>
+          <option value="Manisa">Manisa</option>
+          <option value="Kayseri">Kayseri</option>
+          <option value="Samsun">Samsun</option>
+          <option value="Balıkesir">Balıkesir</option>
+          <option value="Kahramanmaraş">Kahramanmaraş</option>
+          <option value="Van">Van</option>
+          <option value="Aydın">Aydın</option>
+          <option value="Tekirdağ">Tekirdağ</option>
+          <option value="Denizli">Denizli</option>
+          <option value="Sakarya">Sakarya</option>
+        </select><br>
+        
+        <input class="btn bg-dark mr-1" type="reset" value="Sıfırla">
+        <input class="btn bg-dark" type="submit" value="Gönder" style="color: white
+         ;">
+      </form><br>
+   
+
+
+</div>
+</div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>
+</html>
