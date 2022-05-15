@@ -1,0 +1,40 @@
+
+
+.navbar .navbar-nav .nav-item .nav-link {
+
+    color: rgb(206, 202, 202);
+    font-size: medium;
+    
+   
+  
+  
+  } 
+  .navbar-dark .navbar-brand {
+    color: rgb(243, 249, 250);
+}
+#logo {
+     font-family: 'Oleo Script Swash Caps', cursive!important;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+   background-color: white;
+ }
+
+
+ #benkimim{
+   opacity: 0.8;
+ }
+
+ /*ozgecmis*/
+ #egitimtext{
+ font-style: italic;
+
+ }
+
+ /*sehrim*/
+
+
+
+ /*iletisim*/
